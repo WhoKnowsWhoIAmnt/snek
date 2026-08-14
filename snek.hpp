@@ -33,6 +33,7 @@
 #define isit case
 #define ifso :
 #define ifnothing default
+#define name_numbers enum class
 
 void write(const auto& print) {
     std::cout << print << std::endl;
