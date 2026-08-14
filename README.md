@@ -17,6 +17,8 @@ Snek syntax (as compared to C++):
 | `next` | `;` |
 | `becomes` | `=` |
 | `is` | `==` |
+| `isgreaterthan` | `>` |
+| `islessthan` | `<` |
 | `plus` | `+` |
 | `with` | `,` |
 | `part` | `.` (for objects) |
@@ -26,6 +28,7 @@ Snek syntax (as compared to C++):
 | `nothing` | `nullptr` |
 | `words` | `std::string` |
 | `number` | `int` |
+| `list(type)` | `std::vector<type>` |
 | `code_snippet`* | `auto` (used for functions) |
 | `let`* | `auto` (used for variables) |
 | `towords` | `std::to_string` |
