@@ -35,7 +35,7 @@ Snek syntax (as compared to C++):
 | `gathering` | `struct` |
 | `get` | `return` |
 | `compare` | `switch` |
-| `isit` | `case` }
+| `isit` | `case` |
 | `ifso` | `:` (for switch/case statements) |
 | `ifnothing` | `default` |
 | `write the x then` (`write(x)`) | `std::cout << x << std::endl` |
