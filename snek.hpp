@@ -10,16 +10,13 @@
 #define stop break
 #define the (
 #define then )
-#define str std::to_string
+#define towords std::to_string
 #define we {
 #define end }
 #define part .
-#define elif else if
 #define loop(range) for (int i = 0; i < range; i++) {
-#define j_in_range(min, range) (int j = min; j < range; j++)
-#define k_in_range(min, range, step) (int k = min; k < range; k += step)
-#define True true
-#define False false
+#define start_loop(min, range) (int i = min; i < range; i++)
+#define start_loop_step(min, range, step) (int i = min; i < range; i += step)
 #define gathering struct
 #define words std::string
 #define number int
@@ -30,6 +27,11 @@
 #define magic ->
 #define nothing nullptr
 #define comment(x)
+#define plus +
+#define compare switch
+#define isit case
+#define ifso :
+#define ifnothing default
 
 void write(const auto& print) {
     std::cout << print << std::endl;
