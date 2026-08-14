@@ -1,19 +1,25 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
-//all the stuff to write "snek" code
+//all the stuff to write "Cobra" code
 #define code_snippet auto
 #define let auto
 #define next ;
 #define is ==
+#define isnot !=
+#define isgreaterthan >
+#define islessthan <
 #define becomes =
 #define stop break
 #define the (
 #define then )
 #define towords std::to_string
+#define tonumber stoi
 #define we {
 #define end }
-#define with ,
+#define at [
+#define position ]
 #define part .
 #define loop(range) for (int i = 0; i < range; i++) {
 #define start_loop(min, range) (int i = min; i < range; i++)
@@ -29,11 +35,14 @@
 #define nothing nullptr
 #define comment(x)
 #define plus +
+#define minus -
 #define compare switch
 #define isit case
 #define ifso :
 #define ifnothing default
+#define with ,
 #define name_numbers enum class
+#define list(type) std::vector<type>
 
 void write(const auto& print) {
     std::cout << print << std::endl;
