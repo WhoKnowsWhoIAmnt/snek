@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-//all the stuff to write "Cobra" code
+//all the stuff to write "snek" code
 #define code_snippet auto
 #define let auto
 #define next ;
