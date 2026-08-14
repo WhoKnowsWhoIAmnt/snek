@@ -34,6 +34,7 @@ Snek syntax (as compared to C++):
 | `start_loop(start, range)` | `for (int i = start; i < range; i++)` |
 | `start_loop_step(start, range, step)` | `for (int i = start; i < range; i += step)` |
 | `gathering` | `struct` |
+| `name_numbers` | `enum class` |
 | `get` | `return` |
 | `compare` | `switch` |
 | `isit` | `case` |
