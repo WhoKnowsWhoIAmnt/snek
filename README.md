@@ -18,6 +18,7 @@ Snek syntax (as compared to C++):
 | `becomes` | `=` |
 | `is` | `==` |
 | `plus` | `+` |
+| `part` | `.` (for objects) |
 | `actually` | `&` (for pointers/references) |
 | `but` | `*` (for pointers) |
 | `magic` | `->` |
@@ -26,8 +27,8 @@ Snek syntax (as compared to C++):
 | `number` | `int` |
 | `code_snippet` | `auto` (used for functions) |
 | `let` | `auto` (used for variables) |
+| `towords` | `std::to_string` |
 | `stop` | `break` |
-| `part` | `.` (for objects) |
 | `loop(range)` | `for (int i = 0; i < range; i++)` |
 | `start_loop(start, range)` | `for (int i = start; i < range; i++)` |
 | `start_loop_step(start, range, step)` | `for (int i = start; i < range; i += step)` |
