@@ -4,7 +4,9 @@ The question turned into Cobra, a separate little mini language that I tried to 
 
 Then I wondered, "How far can I take #define and some helper functions? What if a theoretical programmer thought, 'I want to write a programming language that's as readable as possible' but ended up creating a mess?"
 
-The answer: **snek**, a deviation of Cobra which is in itself a deviation of C++,
+The answer: **snek**, a deviation of Cobra which is in itself a deviation of C++. It is completely compatible with C++, meaning that if you include "snek.hpp" in your project, you can still write normal C++ code. After all, snek is literally entirely just a ton of #define lines and a few functions.
+
+If for whatever reason *you* want to write snek, it's very simple! Just download snek.hpp, drag it into wherever you write code, #include "snek.hpp" at the top of your project, and good luck.
 
 Snek syntax (as compared to C++):
 | Snek | C++ |
