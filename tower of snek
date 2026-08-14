@@ -1,0 +1,53 @@
+#include "snek.hpp"
+
+start_code
+
+gathering tower we
+    list(number) discs next
+    number towernum next
+    tower the number num then ifso towernum the num then we
+        if the num is 1 then we
+            discs becomes we 6 with 5 with 4 with 3 with 2 with 1 end next
+        end
+    end
+end next
+
+list(tower) towers next
+towers part push_back the tower the 1 then then next
+towers part push_back the tower the 2 then then next
+towers part push_back the tower the 3 then then next
+
+list(number) goal becomes we 6 with 5 with 4 with 3 with 2 with 1 end next
+
+while the towers at 2 position part discs isnot goal then we
+    number towerfromselected becomes tonumber the input the "which tower would you like to move from? " then then minus 1 next
+    if the towerfromselected isgreaterthan -1 and towerfromselected islessthan 3 then we
+        if the not towers at towerfromselected position part discs part empty the then then we
+            number disc becomes towers at towerfromselected position part discs part back the then next
+            write the "the top disc is " plus towords the disc then then next
+            number towertoselected becomes tonumber the input the "which tower would you like to move to? " then then minus 1 next
+            if the towertoselected isgreaterthan -1 and towertoselected islessthan 3 then we
+                if the not towers at towertoselected position part discs part empty the then then we
+                    if the towers at towertoselected position part discs part back the then isgreaterthan disc then we
+                        towers at towerfromselected position part discs part pop_back the then next
+                        towers at towertoselected position part discs part push_back the disc then next
+                    end else we
+                        write the "that tower's top disc is smaller than your current disc." then next
+                    end
+                end else we
+                    towers at towerfromselected position part discs part pop_back the then next
+                    towers at towertoselected position part discs part push_back the disc then next
+                end
+            end else we
+                write the "that tower does not exist." then next
+            end
+        end else we
+            write the "that tower is empty." then next
+        end
+    end else we
+        write the "that tower does not exist." then next
+    end
+end
+
+get 0 next
+end
