@@ -12,7 +12,7 @@ code_snippet doSomething the then we
     write the "this is a function defined via code_snippet" then next
 end
 
-code_snippet addition the let x, let y then we
+code_snippet addition the let x with let y then we
     get x plus y next
 end
 
@@ -58,7 +58,7 @@ end
 // defining variables
 let x becomes 15 next
 let y becomes 20 next
-write the addition the x, y then then next
+write the addition the x with y then then next
 
 // "comments"
 comment(this part of the code is horrifying and horrific.)
