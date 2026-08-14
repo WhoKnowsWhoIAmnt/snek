@@ -25,8 +25,8 @@ Snek syntax (as compared to C++):
 | `nothing` | `nullptr` |
 | `words` | `std::string` |
 | `number` | `int` |
-| `code_snippet` | `auto` (used for functions) |
-| `let` | `auto` (used for variables) |
+| `code_snippet`* | `auto` (used for functions) |
+| `let`* | `auto` (used for variables) |
 | `towords` | `std::to_string` |
 | `stop` | `break` |
 | `loop(range)` | `for (int i = 0; i < range; i++)` |
@@ -42,4 +42,4 @@ Snek syntax (as compared to C++):
 | `comment(x)` | `// x` |
 | `input the prompt then` (`input(prompt)`) | `std::cout << prompt << std::endl; std::string input; std::getline(std::cin, input); return input;` (essentially just get user input with a prompt) |
 
-IMPORTANT: In order to properly use code_snippet, your C++ compiler should be C++ 20 or later! It still technically works on older versions, but it's not as safe.
+*IMPORTANT: In order to properly use `code_snippet` (and `let` in parameters), your C++ compiler should be C++ 20 or later! It still technically works on older versions, but it's not as safe.
