@@ -18,6 +18,7 @@ Snek syntax (as compared to C++):
 | `becomes` | `=` |
 | `is` | `==` |
 | `plus` | `+` |
+| `with` | `,` |
 | `part` | `.` (for objects) |
 | `actually` | `&` (for pointers/references) |
 | `but` | `*` (for pointers) |
