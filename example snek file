@@ -1,0 +1,92 @@
+#include "snek.hpp"
+
+// defining a struct
+gathering item we
+    words name next
+    number amount next
+    item but smalleritem becomes nothing next
+end next
+
+//defining functions
+code_snippet doSomething the then we
+    write the "this is a function defined via code_snippet" then next
+end
+
+code_snippet addition the let x, let y then we
+    get x plus y next
+end
+
+// main()
+start_code
+
+// printing functions
+write the "Hello, world!" then next
+write the 34.9 then next
+
+// for loops
+loop(2)
+    write the "this is a loop!" then next
+end
+
+// getting inputs
+let inpt becomes input the "give an input (hello/bye) " then next
+write the "your input was " + inpt then next
+
+// if/else statements
+if the inpt is "hello" then we
+    write the "why hello there!" then next
+    end
+elif the inpt is "bye" then we
+    write the "bye bye!" then next
+    end
+else we
+    write the "invalid input" then next
+    end
+
+// calling functions
+doSomething the then next
+
+// while loops
+while the True then we
+    write the "true!" then next
+    if the not False and True then we
+        write the "this is both not false and also true!" then next
+        stop next
+        end
+end
+
+// defining variables
+let x becomes 15 next
+let y becomes 20 next
+write the addition the x, y then then next
+
+// "comments"
+comment(this part of the code is horrifying and horrific.)
+comment(and yes this is the only way to make comments actually work with macros.)
+
+// changing struct object values (and pointers)
+item thing next
+thing part amount becomes 1 next
+thing part name becomes "thing" next
+item smallerthing next
+smallerthing part amount becomes 3 next
+smallerthing part name becomes "small" next
+thing part smalleritem becomes actually smallerthing next   // assigning pointers
+write the "thing's name is " plus thing part name then next
+write the thing part smalleritem magic amount then next   // accessing pointer values
+
+// switch-case statements
+let character becomes 'a' next
+compare the character then we
+    isit 'a' ifso
+        write the "it's a" then next
+        stop next
+    ifnothing ifso
+        write the "it's nothing" then next
+        stop next
+end
+
+// return 0 for main()
+get 0 next
+
+end
