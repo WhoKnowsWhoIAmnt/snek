@@ -1,5 +1,14 @@
 #include "snek.hpp"
 
+//defining an enum class
+name_numbers enum_class we
+    This with
+    Is with
+    An with
+    Enum with
+    Class
+end next
+
 // defining a struct
 gathering item we
     words name next
