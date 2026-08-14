@@ -13,6 +13,7 @@
 #define towords std::to_string
 #define we {
 #define end }
+#define with ,
 #define part .
 #define loop(range) for (int i = 0; i < range; i++) {
 #define start_loop(min, range) (int i = min; i < range; i++)
