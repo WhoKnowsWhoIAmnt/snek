@@ -44,6 +44,7 @@
 #define minus -
 #define times *
 #define over /
+#define negative -
 #define compare switch
 #define isit case
 #define ifso :
@@ -51,6 +52,9 @@
 #define with ,
 #define name_numbers enum class
 #define list(type) std::vector<type>
+#define top back
+#define remove_top pop_back
+#define add_to_top push_back
 #define redtext "\033[31m"
 #define bluetext "\033[34m"
 #define clearformat "\033[0m"
