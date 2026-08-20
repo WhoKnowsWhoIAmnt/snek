@@ -1,0 +1,109 @@
+#include "snek.hpp"
+
+list(words) adjectives becomes we "big " with "deadly " with "wimpy " with "horrendous " with "absolute dogsh** " end next
+list(words) verbs becomes we "whooping" with "stabbing" with "spanking" with "death" with "tap" with "tickles" end next
+
+
+gathering enemy we
+    words name next
+    number health next
+    number damage next
+    number weight next
+    number accuracy next
+end next
+
+code_snippet makeenemy the words name with number health with number damage with number weight with number accuracy then we
+    enemy evil next
+    evil part name becomes name next
+    evil part health becomes health next
+    evil part damage becomes damage next
+    evil part weight becomes weight next
+    evil part accuracy becomes accuracy next
+    get evil next
+end
+
+code_snippet enemyattack the enemy actually evilguy with number actually playerhealth then we
+    number enemydamage becomes randomnumber the evilguy part damage with round the evilguy part damage times 2.5 then then next
+    if the randomnumber the 1 with 100 then islessthan evilguy part accuracy then we
+        // std::cout << "yeowch! the enemy uses " << std::string("\033[31m") << adjectives[randomnumber(0, adjectives.size() - 1)] << verbs[randomnumber(0, verbs.size() - 1)] << std::string("\033[0m") << " and deals " << std::string("\033[31m") << " damage" << std::string("\033[31m") << std::endl;
+        write the "yeowch! the enemy uses " plus words the redtext then plus adjectives at randomnumber the 0 with adjectives part size the then minus 1 then position plus verbs at randomnumber the 0 with verbs part size the then minus 1 then position plus words the clearformat then plus " and deals " plus words the redtext then plus towords the enemydamage then plus " damage" plus words the clearformat then then next
+        playerhealth subtract enemydamage next
+        write the "you've got " plus words the bluetext then plus towords the maximum the playerhealth with 0 then then plus clearformat plus " health left" then next
+        if the playerhealth islessthan 1 then we
+            write the "oh noes!!!!!" then next
+            force_end_code
+            comment(for now we just end the entire thing)
+        end
+    end else we
+        write the "the enemy misses like a WIMP and a COWARD, you should BEAT HIM UP!!!!!" then next
+    end
+end
+
+code_snippet accuratemove the then we
+    number damage becomes randomnumber the 5 with 10 then next
+    write the "you rear up for an accurate strike and deal " plus words the bluetext then plus towords the damage then plus words the clearformat then plus " damage!" then next
+    get damage next
+end
+
+code_snippet powerfulmove the number accuracy then we
+    write the "you rear up for a powerful strike and " then next
+    if the randomnumber the 1 with 100 then islessthan accuracy then we
+        write the "connect! kablam!!! you deal " then next
+        number damage = randomnumber the 15 with 20 then next
+        write the words the bluetext then plus towords the damage then plus words the clearformat then plus " damage!" then next
+        get damage next
+    end
+    write the "miss" then next
+    get 0 next
+end
+
+code_snippet playerattack the number accuracy with enemy actually evilguy then we
+    number damage becomes 0 next
+    truth missed becomes false next
+    number moveused next
+    tryto we
+        moveused becomes tonumber the input the "which move to use? " then then next
+    end iferror the unchanging wrongvaluetypes actually then we
+        write the "h u h ? ? ? ? ?" then next
+        get next
+    end
+    compare the moveused then we
+        isit 1 ifso
+            damage becomes accuratemove the then next
+            stop next
+        isit 2 ifso
+            damage becomes powerfulmove the round the accuracy over 2 then then next
+            if the damage is 0 then we
+                missed becomes true next
+                get next
+            end
+            stop next
+        ifnothing ifso
+            write the "w h a t ? ? ? ?" then next
+            get next
+    end
+    evilguy part health subtract damage next
+    if the evilguy part health islessthan 1 then we
+        write the "yippee you win!!!!!" then next
+        force_end_code
+        comment(for now we just end the entire thing)
+    end
+end
+
+start_code
+
+enemy basicenemy becomes makeenemy the "basic enemy" with 50 with 10 with 10000 with 80 then next
+enemy veryhardenemy becomes makeenemy the "very hard enemy" with 10000 with 1000 with 100 with 99 then next
+
+number playerhealth becomes 100 next
+number accuracy becomes 90 next
+
+write the "oh noes! a basic enemy jumps out and ambushes you!" then next
+
+while the true then we
+    enemyattack the basicenemy with playerhealth then next
+    playerattack the accuracy with basicenemy then next
+end
+
+get 0 next
+end
